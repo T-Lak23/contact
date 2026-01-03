@@ -4,6 +4,7 @@ import { ENV } from "./config/env.js";
 import { connectDB } from "./config/db.js";
 import formRoute from "./route/form.route.js";
 import { globalErrorHandler } from "./middleware/globalErrorHandler.js";
+import { throwError } from "./utils/throwError.js";
 
 const app = express();
 const { PORT, CLIENT_URL } = ENV;
